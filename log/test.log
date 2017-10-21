@@ -928,3 +928,7 @@ Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.1ms)
 Started GET "/students/1" for 127.0.0.1 at 2017-10-21 01:23:54 +0000
 Processing by StudentsController#show as HTML
   Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered students/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 188ms (Views: 168.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
