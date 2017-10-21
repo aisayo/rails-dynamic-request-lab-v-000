@@ -4,6 +4,6 @@ class StudentsController < ApplicationController
   end
 
   def show
-    @students = Students.all
+    @students = Student.all
   end
 end
